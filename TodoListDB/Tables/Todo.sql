@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Todo]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	Nom VARCHAR(100) NOT NULL,
+	DateLimite DATETIME2(7),
+	Description VARCHAR(250),
+	Priorite INT,
+	IsFinished BIT DEFAULT 0
+)
